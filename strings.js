@@ -186,3 +186,77 @@ console.log(text5);
 let stri = "ABC";
 
 console.log(stri.charCodeAt(0)); // 65
+
+//21. fromCharCode()
+//Creates string from Unicode values.
+
+let letters = String.fromCharCode(65, 66, 67);
+console.log(letters); // ABC
+
+//22. localeCompare()
+//Compares strings alphabetically.
+
+let results = "apple".localeCompare("banana");
+
+console.log(results); // -1 (because "apple" < "banana")
+
+//23. match()
+//Searches using regex.
+
+let text3 = "The rain in Spain";
+
+let found = text3.match(/ain/g);
+console.log(found); // ["ain", "ain"]
+
+//24. search()
+//Finds position of regex match.
+
+console.log(txt.search(/rain/)); // 4
+
+//25. valueOf()
+//Returns primitive string value.
+
+let str4 = new String("JS");
+console.log(str4.valueOf()); // "JS"
+
+//26. toString()
+//Converts value to string.
+
+let num1 = 100;
+console.log(num1.toString()); // "100"
+
+//27. String Immutability
+//Strings cannot be changed. When you “change” them, you’re creating a new string.
+
+let str5 = "Hi";
+str[0] = "h";
+
+console.log(str5); // still "Hi"
+
+//28. Raw Strings
+//Used with tagged templates.
+
+console.log(String.raw`Line1\nLine2`);
+// Output: Line1\nLine2
+
+//29. Escaping Characters
+//Special characters inside strings:
+
+/*
+\n → new line
+
+\t → tab
+
+\' → single quote
+
+\" → double quote
+
+\\ → backslash
+*/
+
+let str = "Hello\nWorld";
+console.log(str);
+
+//output
+//Hello
+//World
