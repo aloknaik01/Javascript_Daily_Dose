@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LEARNING DOM</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      #output {
+        margin-top: 10px;
+        font-size: 18px;
+        color: darkblue;
+      }
+      ul {
+        margin-top: 10px;
+      }
+      li {
+        cursor: pointer;
+      }
+      .highlight {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Learn DOM with JavaScript</h1>
+    <input type="text" id="nameInput" placeholder="Enter your name" />
+    <button>Greet</button>
+    <p id="output">Your greeting will appear here.</p>
+
+    <hr />
+
+    <button>Change Background</button>
+    <button>Add List Item</button>
+
+    <ul id="myList">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+    <script src="./accessing-dom.js"></script>
+  </body>
+</html>
