@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Selection Practice</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      .highlight {
+        background-color: yellow;
+      }
+      .note {
+        color: darkgreen;
+        font-weight: bold;
+      }
+      .box {
+        border: 1px solid gray;
+        padding: 10px;
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="page-title">DOM Practice Page</h1>
+
+    <p id="main-paragraph">This is a paragraph with an ID.</p>
+
+    <p class="note">This is a paragraph with the class "note".</p>
+    <p class="note">Another note paragraph.</p>
+
+    <ul id="fruit-list">
+      <li class="fruit-item">Apple</li>
+      <li class="fruit-item">Banana</li>
+      <li class="fruit-item">Cherry</li>
+    </ul>
+
+    <div id="form-section">
+      <label for="name-input" class="label">Name:</label>
+      <input type="text" id="name-input"  name="userName" placeholder="Type your name here" />
+      <button id="submit-btn">Submit</button>
+    </div>
+
+    <div class="box" id="box1">Box 1</div>
+    <div class="box" id="box2">Box 2</div>
+    <div class="box" id="box3">Box 3</div>
+
+    <script src="./selecting-element.js"></script>
+  </body>
+</html>
