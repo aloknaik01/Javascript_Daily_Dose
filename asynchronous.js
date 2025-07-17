@@ -275,14 +275,21 @@ requestAnimationFrame(() => {
   console.log("Runs before next screen repaint!");
 });
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> e4ee64bb95e17746534b28ec010c60beed4fbaf1
 // 16. Realistic Example: Loading posts
 
 async function loadPosts() {
   try {
     const res = await fetch("https://jsonplaceholder.typicode.com/posts");
     const posts = await res.json();
+<<<<<<< HEAD
+    posts.slice(0, 3).forEach((post) => {
+=======
     posts.slice(0, 3).forEach(post => {
+>>>>>>> e4ee64bb95e17746534b28ec010c60beed4fbaf1
       console.log(post.title);
     });
   } catch (error) {
