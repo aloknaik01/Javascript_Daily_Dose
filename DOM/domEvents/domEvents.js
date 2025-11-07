@@ -7,7 +7,7 @@ A user clicks a button → click event
 A key is pressed → keydown event
 A page finishes loading → load event
 A mouse moves over an element → mouseover event
-✅ Events connect user actions to JavaScript code.
+ Events connect user actions to JavaScript code.
 */
 
 //How Events Work
@@ -80,7 +80,7 @@ Advanced options (e.g. capture, once)
 //The Event Object
 //When an event happens, the browser passes an event object to //your function.
 
-//✅ Example:
+//Example:
 document.addEventListener("click", function (event) {
   console.log(event.type); // e.g. "click"
   console.log(event.target); // element that triggered the event
